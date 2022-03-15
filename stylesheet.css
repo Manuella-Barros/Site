@@ -1,0 +1,29 @@
+.fundo{
+    border: 0cm;
+    border-color: rgba(247, 0, 0, 0.486);
+    border-radius: 0cm;
+    border-width: 0.2cm;
+    border-style: inset;
+    background-color: rgb(255, 228, 228);
+    margin-left: auto;
+    margin-right: auto;
+    width: 10cm; 
+}
+
+h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    background-color: rgba(255, 212, 212, 0.336);
+}
+
+.titulo{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+
+img{
+    position:absolute;
+    width: 1.5cm;
+    right: 7.5cm;
+    top: 0.7cm;
+}
