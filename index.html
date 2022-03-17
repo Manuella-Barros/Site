@@ -5,42 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Área de cadastro</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
-<!--<script src="script.js" />
--->
+    <title>Área de cadastro</title>
+    <script> src="script.js" </script>
+        
 </head>
 
 <body>
 <div class="fundo">
-    <h1 class="titulo" >Inscrição</h1>
+    <div id="titulo" >
+        <img class="imgDireita" src="https://i.pinimg.com/originals/1e/d2/f2/1ed2f24a0444ee7a3f59f6aaa5f9d092.gif" alt="">
+        <h1>Inscrição</h1>
+        <img class="imgEsquerda" src="https://i.pinimg.com/originals/1e/d2/f2/1ed2f24a0444ee7a3f59f6aaa5f9d092.gif" alt="">
+    </div>
 
-    <form action="cadastro.html">
-
-        <div>
-            <img src="https://i.pinimg.com/originals/1e/d2/f2/1ed2f24a0444ee7a3f59f6aaa5f9d092.gif" alt="">
-        </div>
+    <form action="cadastro.html" method="post">
 
         <div>
             <p>
                 Preencha suas informações abaixo para completar a inscrição
             </p>
             <p>
-                Nome: <input type="type" placeholder="Coloque seu nome completo aqui" required>
+                Nome: <input type="type" placeholder="Coloque seu nome completo aqui" name="usuario_nome" required>
             </p>
             <p>
-                Telefone: <input type="text" placeholder="Inclua o DDD" required>
+                Celular: <input type="text" placeholder="Inclua o DDD" name="usuario_celular" required>
             </p>
             <p>
-                Email: <input type="email" placeholder="Apenas gmail"required>
+                Email: <input type="email" placeholder="Apenas gmail" name="usuario_email" required>
             </p>
             <p>
-                Data de nascimento: <input type="date" required>
+                Data de nascimento: <input type="date" name="usuario_aniversario" required>
             </p>
         </div>
 
-        <div class="titulo">
-            <button type="submit" >
+        <div class="botao">
+            <button type="submit" onclick="Enviar()" name="Enviar()">
             Quero me inscrever 
             </button>
         </div>

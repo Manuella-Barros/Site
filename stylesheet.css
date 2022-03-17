@@ -1,4 +1,4 @@
-.fundo{
+.fundo {
     border: 0cm;
     border-color: rgba(247, 0, 0, 0.486);
     border-radius: 0cm;
@@ -14,16 +14,35 @@ h1{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif ;
     background-color: rgba(255, 212, 212, 0.336);
+    display: inline-block;
 }
 
-.titulo{
+.botao{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif ;
 }
 
 img{
-    position:absolute;
     width: 1.5cm;
-    right: 7.5cm;
+    right: 14cm;
     top: 0.7cm;
+}
+
+.imgDireita, .imgEsquerda{
+    display: inline-block;
+}
+
+
+input:hover, input:focus {
+    border-color: #f859b6;
+    background-color: #f8f8f8;
+    color: rgb(22, 22, 22);
+    font-weight: bold;
+}
+
+#titulo{
+    /*border-style: dotted; isso serve para saber onde ta o div*/
+    display: inline-block;
+    position: relative;
+    left: 14%;
 }
