@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
     <title>Área de cadastro</title>
-    <script> src="script.js" </script>
         
 </head>
 
@@ -19,33 +18,41 @@
         <img class="imgEsquerda" src="https://i.pinimg.com/originals/1e/d2/f2/1ed2f24a0444ee7a3f59f6aaa5f9d092.gif" alt="">
     </div>
 
-    <form action="cadastro.html" method="post">
+    <section>
 
         <div>
             <p>
                 Preencha suas informações abaixo para completar a inscrição
             </p>
-            <p>
-                Nome: <input type="type" placeholder="Coloque seu nome completo aqui" name="usuario_nome" required>
+            <p>Nome: 
+                <input type="type" placeholder="Nome completo" id="usuario_nome" required>
             </p>
-            <p>
-                Celular: <input type="text" placeholder="Inclua o DDD" name="usuario_celular" required>
+            <p>Celular: 
+                <input type="text" placeholder="Inclua o DDD" id="usuario_celular" required>
             </p>
-            <p>
-                Email: <input type="email" placeholder="Apenas gmail" name="usuario_email" required>
+            <p>Email: 
+                <input type="email" placeholder="Apenas gmail" id="usuario_email" required>
             </p>
-            <p>
-                Data de nascimento: <input type="date" name="usuario_aniversario" required>
+            <p>Data de nascimento: 
+                <input type="date" id="usuario_aniversario" required>
             </p>
         </div>
 
-        <div class="botao">
-            <button type="submit" onclick="Enviar()" name="Enviar()">
-            Quero me inscrever 
-            </button>
+        <div class="botao" >
+            <input type="button" value="Quero me inscrever" onclick="enviar()">  
         </div>
-    </form>
+    </section>
+
+
 </div>
+
+<br>
+
+<div id="res">
+</div>
+
+<script src="script.js"></script>
+
 </body>
 
 </html>

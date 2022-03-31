@@ -46,3 +46,7 @@ input:hover, input:focus {
     position: relative;
     left: 14%;
 }
+
+#res{
+    text-align: center;
+}
